@@ -1,0 +1,104 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #1d4444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    height: 45%;
+    width: 20%;
+    /* min-width: 80%; */
+}
+
+h3{
+    margin-bottom: 10%;
+    text-decoration: underline;
+}
+
+.container{
+    margin-bottom: 10%;
+    border: 1px solid black;
+    height: 10%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    justify-content: space-evenly;
+    max-width: 90%;
+    /* flex-wrap: wrap; */
+}
+img{
+    margin-bottom: 10%;
+    max-width: 50%;  /* Image won't exceed the container's width */
+    height: 20%;     /* Maintains the image's aspect ratio */
+    display: block;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+input ,label,select{
+    border: none;
+    outline: none;
+   
+}
+
+select{
+    width: 30%;
+}
+
+
+@media (max-width:1290px ) {
+    .container{
+        display: flex;
+        flex-direction: column;
+
+    }
+    select{
+        width: 100%;
+        background-color: white;
+        text-align: center;
+        border: 1px solid black;
+    }
+    .input{
+          display: flex;
+          flex-wrap: wrap;
+    }
+    h1{
+
+    }
+}
+
+@media (max-width:1040px) {
+    .container{
+        width: 100%;
+    }
+     .input{
+        display: flex;
+        flex-wrap: wrap;
+
+        width: 100%;
+        overflow: hidden;
+     }
+}
