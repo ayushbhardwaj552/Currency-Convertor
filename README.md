@@ -29,6 +29,7 @@ This app fetches real-time exchange rates and allows users to convert between di
    git clone https://github.com/yourusername/currency-converter.git
    cd currency-converter
 
+2. **Verify the Folder Structure**
 
 currency-converter/
 │── index.html
